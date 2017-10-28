@@ -1,8 +1,8 @@
-package Tests;
+package tests;
 
-import Odel.User;
-import Pages.InOutRegWindow;
-import Pages.Purchase;
+import odel.User;
+import pages.InOutRegWindow;
+import pages.Purchase;
 import org.junit.Assert;
 import org.apache.commons.io.*;
 import org.openqa.selenium.*;
