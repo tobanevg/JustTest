@@ -1,9 +1,7 @@
-package Tests;
+package tests;
 
-import Odel.User;
+import odel.User;
 
-import Tests.Application;
-import Tests.DataProviders;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
@@ -12,17 +10,16 @@ import com.tngtech.java.junit.dataprovider.UseDataProvider;
 
 @RunWith(DataProviderRunner.class)
 public class STTest {
-    private Application app = new Application();
+    private tests.Application app = new tests.Application();
 
     @Test
     @UseDataProvider(value = "validUsers", location = DataProviders.class)
     public void register(User user) {
         app.registration(user);
-        app.purchuasing();
+        app.purchasing();
         app.logout();
         app.login();
         app.quit();
     }
-
 
 }

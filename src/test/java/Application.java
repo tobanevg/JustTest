@@ -1,6 +1,8 @@
 package tests;
 
 import odel.User;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.opera.OperaDriver;
 import pages.InOutRegWindow;
 import pages.Purchase;
 import org.junit.Assert;
@@ -49,7 +51,7 @@ public class Application {
 
     }
 
-    public void purchuasing() {
+    public void purchasing() {
         purchase.open();
         purchase.search().openProduct().changingAmount().buyPr().openCart().mkOrder();
         try {

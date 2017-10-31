@@ -1,4 +1,4 @@
-package Odel;
+package odel;
 
 public class User {
 

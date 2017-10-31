@@ -1,6 +1,6 @@
-package Tests;
+package tests;
 
-import Odel.User;
+import odel.User;
 import com.tngtech.java.junit.dataprovider.DataProvider;
 
 
